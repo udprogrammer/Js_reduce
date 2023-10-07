@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let arr = [10, 20, 30, 40, 50, 60, 70];
+    console.log(arr);
+
+    // let sum = arr
+    // .map((x) => x + 2).
+    // reduce((total, x) => total + x, 0);
+    // console.log(sum);
+
+    // let evennumber = arr
+    //   .filter((x) => x % 20 === 0)
+    //   .reduce((total, x) => total + x, 0);
+    // console.log(evennumber);
+
+    // let multi = arr
+    //   .map((num) => num * 2)
+    //   .reduce((total, num) => total + num, 0);
+    // console.log(multi);
+
+    // let square = arr
+    //   .map((num) => num * num)
+    //   .reduce((total, num) => total + num, 0);
+    // console.log();
+
+    let data = [
+      {
+        name: "Uday",
+        maths: 81,
+        english: 80,
+      },
+      {
+        name: "Jhon",
+        maths: 77,
+        english: 59,
+      },
+      {
+        name: "Arlin",
+        maths: 78,
+        english: 95,
+      },
+    ];
+
+    let TotalMaths = data
+      .map((marks) => marks.maths)
+      .reduce((total, marks) => total + marks, 0);
+
+    let Totalenglish = data
+      .map((marks) => marks.english)
+      .reduce((total, marks) => total + marks, 0);
+
+    console.log(TotalMaths);
+    console.log(Totalenglish);
+  </script>
+</html>
